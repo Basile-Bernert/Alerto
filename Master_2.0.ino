@@ -101,8 +101,15 @@ void reponse(byte code){
   if (alerte = 0){
     
     if(valbout1){
-      pixels.setPixelColor(pixels.Color(0, 150, 0));
-      pixels.show(); 
+     for(int i=0; i<NUMPIXELS; i++) { 
+
+  
+    pixels.setPixelColor(i, pixels.Color(0, 150, 0));
+
+    pixels.show();   
+
+    
+  }
     }else{
       pixels.clear();
     }
@@ -110,8 +117,16 @@ void reponse(byte code){
   } else if(alerte = 1){
     
     if(valbout1){
-      pixels.setPixelColor(pixels.Color(130, 64, 0));
-      pixels.show(); 
+     for(int i=0; i<NUMPIXELS; i++) { 
+
+  
+    pixels.setPixelColor(i, pixels.Color(0, 150, 0));
+
+    pixels.show();   
+
+    
+  }
+       
     }else{
       pixels.clear();
     }
